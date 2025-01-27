@@ -1,0 +1,9 @@
+Aprenda ReactJS, NextJS, Styled-Components, Testes com Jest,
+Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
+by Luiz Otávio Miranda.
+
+// Retorno dos estudos
+// Seção 4: React Hooks (Teoria e Hooks Avançados)
+// Aula 68. Ordem de execução dos Hooks
+
+// A configuração desse projeto foi feita com base na aula 45.
