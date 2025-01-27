@@ -1,9 +1,25 @@
-Aprenda ReactJS, NextJS, Styled-Components, Testes com Jest,
-Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
-by Luiz Otávio Miranda.
+// Aprenda ReactJS, NextJS, Styled-Components, Testes com Jest,
+// Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
+// by Luiz Otávio Miranda.
 
-// Retorno dos estudos
-// Seção 4: React Hooks (Teoria e Hooks Avançados)
-// Aula 68. Ordem de execução dos Hooks
+import { useState } from 'react';
 
-// A configuração desse projeto foi feita com base na aula 45.
+// Aula 68 (Ordem de execução dos Hooks)
+
+// 'Lazy Initializers' é quando se passa uma 'callback' como
+// valor inicial do 'hook' useState();
+export const Home = () => {
+  const [state, setState] = useState(() => {
+    console.log('Hello, world!');
+  });
+};
+// São executados ANTES da RENDERIZAÇÃO do componente.
+
+// Um 'estado' no 'componente filho' não causa uma re-renderização
+// no 'componente pai'.
+
+// Os hooks do tipo 'useEffect' são executados NA ORDEM que o programador
+// definir.
+
+// reference:
+// https://github.com/donavon/hook-flow/blob/master/hook-flow.png
