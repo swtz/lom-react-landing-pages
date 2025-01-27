@@ -4,19 +4,9 @@
 
 // Seção 4 (React Hooks)
 
-// Aula 70 (Padrão Compound Components e React.Children + React.cloneElement - Parte 1)
+// Aula 71 (Padrão Compound Components e Context API - Parte 2)
 
-// No código da aula ('src/templates/Home/index.jsx'),
-// é visto o 'pattern' Compound Components.
-
-// Esse padrão permite que o 'Parent Component' passe um função
-// que altera um de seus estados por meio de 'props', ou seja,
-// os 'Children Components' podem ALTERAR O ESTADO DO 'Parent Component',
-// por meio dessa função.
-
-// Nesse caso, um componente filho provoca uma re-renderização do
-// componente pai.
-
-// Obs.: 'Compound Components Pattern' permite a COMPOSIÇÃO  de componentes,
-// ou seja, naturalmente, os componentes desse padrão SOZINHOS, muitas vezes,
-// não realizam nada; porém, JUNTOS realizam alguma coisa.
+// Foi obtido o mesmo resultado do código anterior, porém
+// usando a 'Context API' para resolver o problema de passar
+// props personalizadas para elementos 'JSX' (no caso, quando isso
+// ocorre é lançada uma exceção no console).
