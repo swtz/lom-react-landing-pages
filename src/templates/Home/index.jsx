@@ -1,5 +1,5 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
+/* eslint-disable react/prop-types */
+import { Children, cloneElement, useState } from 'react';
 
 const s = {
   style: {
@@ -7,29 +7,43 @@ const s = {
   },
 };
 
-const ItWillThrowError = () => {
-  const [counter, setCounter] = useState(0);
+const TurnOnOff = ({ children }) => {
+  const [isOn, setIsOn] = useState(false);
+  const onTurn = () => setIsOn((s) => !s);
 
-  useEffect(() => {
-    console.log(counter);
-    if (counter > 3) {
-      throw new Error('Que chato!!!');
-    }
-  }, [counter]);
+  return Children.map(children, (child) => {
+    const newChild = cloneElement(child, {
+      isOn,
+      onTurn,
+    });
+    return newChild;
+  });
+};
 
+const TurnedOn = ({ isOn, children }) => (isOn ? children : null);
+
+const TurnedOff = ({ isOn, children }) => (isOn ? null : children);
+
+const TurnButton = ({ isOn, onTurn, ...props }) => {
   return (
-    <div>
-      <button {...s} onClick={() => setCounter((c) => c + 1)}>
-        Click to increase {counter}
-      </button>
-    </div>
+    <button onClick={onTurn} {...props}>
+      Turn {isOn ? 'OFF' : 'ON'}
+    </button>
   );
 };
 
+const P = ({ children }) => <p {...s}>{children}</p>;
+
 export const Home = () => {
   return (
-    <div {...s}>
-      <ItWillThrowError />
-    </div>
+    <TurnOnOff>
+      <TurnedOn>
+        <P>Aqui as coisas que vão acontecer quando estiver ON.</P>
+      </TurnedOn>
+      <TurnedOff>
+        <P>Aqui vem as coisas do OFF.</P>
+      </TurnedOff>
+      <TurnButton {...s} />
+    </TurnOnOff>
   );
 };
