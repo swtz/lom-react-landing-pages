@@ -2,24 +2,9 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-import { useState } from 'react';
+// Seção 4 (React Hooks)
 
-// Aula 68 (Ordem de execução dos Hooks)
+// Aula 69 (Error Boundaries - Controlando erros)
 
-// 'Lazy Initializers' é quando se passa uma 'callback' como
-// valor inicial do 'hook' useState();
-export const Home = () => {
-  const [state, setState] = useState(() => {
-    console.log('Hello, world!');
-  });
-};
-// São executados ANTES da RENDERIZAÇÃO do componente.
-
-// Um 'estado' no 'componente filho' não causa uma re-renderização
-// no 'componente pai'.
-
-// Os hooks do tipo 'useEffect' são executados NA ORDEM que o programador
-// definir.
-
-// reference:
-// https://github.com/donavon/hook-flow/blob/master/hook-flow.png
+// Dúvidas sobre 'Spread Attributes':
+// https://chatgpt.com/c/67978a72-1cc8-8011-b0e0-487163e028cc
