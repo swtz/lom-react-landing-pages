@@ -3,11 +3,4 @@
 // by Luiz Otávio Miranda.
 
 // Seção 4 (React Hooks)
-// Aula 73 Context API + Hooks (unindo as ideias) - Parte 1
-
-// [in the terminal]:
-// npx npm-check -u
-// Faz uma checagem das versões disponíveis de todas as
-// dependências instaladas. É útil para verificar atualizações
-// de pacotes. É importante realizar esse comando principalmente
-// quando um projeto está em andamento.
+// Aula 74 Context API + Hooks (unindo as ideias) - Parte 2
