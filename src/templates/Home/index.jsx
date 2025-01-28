@@ -1,15 +1,14 @@
-import { useCounterContext } from '../../contexts/CounterContext';
 import { Button } from '../../components/Button';
+import { Heading } from '../../components/Heading';
+import { useCounterContext } from '../../contexts/CounterContext';
 
 export const Home = () => {
   const [state, actions] = useCounterContext();
 
   return (
     <div>
-      <h1>{state.counter}</h1>
-      <Button onButtonClick={actions.increase}>
-        Clique aqui para incrementar
-      </Button>
+      <Heading />
+      <Button text="Increase +1" onButtonClick={actions.increase} />
     </div>
   );
 };

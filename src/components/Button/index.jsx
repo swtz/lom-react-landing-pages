@@ -1,10 +1,10 @@
 import P from 'prop-types';
 
-export const Button = ({ children, onButtonClick }) => {
-  return <button onClick={onButtonClick}>{children}</button>;
+export const Button = ({ text, onButtonClick }) => {
+  return <button onClick={onButtonClick}>{text}</button>;
 };
 
 Button.propTypes = {
-  children: P.node.isRequired,
+  text: P.string.isRequired,
   onButtonClick: P.func.isRequired,
 };
