@@ -2,5 +2,37 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
+import { createContext, useContext } from 'react';
+
 // Seção 4 (React Hooks)
 // Aula 74 Context API + Hooks (unindo as ideias) - Parte 2
+
+// No hook 'useCounterContext', o coach-luiz ensinou uma maneira
+// de lançar um erro no console de modo mais preciso, para informar
+// a um desenvolvedor o uso correto de um hook.
+// Nesse caso, o erro orienta o programador a usar o hook dentro
+// de um 'Provider', pois, caso contrário, não funcionará.
+
+// Isso acontece, quando o 'contexto' NÃO POSSUI UM VALOR INICIAL:
+const Context = createContext();
+
+// Ou seja, SEM O VALOR INICIAL, a maneira como é fornecido o valor
+// do 'contexto' é pelo 'Provider', entretanto o programador que usará
+// o hook (que simplesmente chama 'useContext(Context)'), precisa saber
+// que não há um valor inicial sendo passado e que somente se o seu
+// componente estiver dentro do 'Provider' poderá usar o valor fornecido
+// pelo 'contexto'.
+// É nesse caso que surge a maneira de lançar o erro de modo mais preciso
+// no console.
+// Exemplo:
+export const useCounterContext = () => {
+  const context = useContext(Context);
+
+  if (typeof context === 'undefined') {
+    throw new Error(
+      'You have to use useCounterContext inside <CounterContextProvider />',
+    );
+  }
+
+  return [...context];
+};

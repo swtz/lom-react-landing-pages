@@ -1,5 +1,5 @@
 import P from 'prop-types';
-import { createContext, useContext } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 export const initialState = {
   counter: 0,
@@ -9,7 +9,11 @@ export const initialState = {
 const Context = createContext();
 
 export const CounterContextProvider = ({ children }) => {
-  return <Context.Provider value={initialState}>{children}</Context.Provider>;
+  const [state, dispatch] = useState();
+
+  return (
+    <Context.Provider value={[state, dispatch]}>{children}</Context.Provider>
+  );
 };
 
 CounterContextProvider.propTypes = {
@@ -18,6 +22,12 @@ CounterContextProvider.propTypes = {
 
 export const useCounterContext = () => {
   const context = useContext(Context);
+
+  if (typeof context === 'undefined') {
+    throw new Error(
+      'You have to use useCounterContext inside <CounterContextProvider />',
+    );
+  }
 
   return [...context];
 };
