@@ -6,8 +6,9 @@ export const buildActions = (dispatch) => {
     decrease: () => dispatch({ type: actionTypes.DECREASE }),
     reset: () => dispatch({ type: actionTypes.RESET }),
     setCounter: (payload) =>
-      dispatch({ type: actionTypes.SET_COUNTER }, payload),
+      dispatch({ type: actionTypes.SET_COUNTER, payload: payload }),
     asyncIncrease: () => asyncIncreaseFn(dispatch),
+    asyncError: () => asyncErrorFn(dispatch),
   };
 };
 
@@ -28,7 +29,7 @@ const asyncErrorFn = async (dispatch) => {
   return await new Promise((response, reject) => {
     setTimeout(() => {
       dispatch({ type: actionTypes.ASYNC_INCREASE_ERROR });
-      reject('REJECTED!');
+      reject(new Error('reject!'));
     }, 2000);
   });
 };
