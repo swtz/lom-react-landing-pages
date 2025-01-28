@@ -3,10 +3,23 @@
 // by Luiz Otávio Miranda.
 
 // Seção 4 (React Hooks)
+// Aula 72 React.lazy - Suspense e divisão de código (Code-Splitting)
 
-// Aula 71 (Padrão Compound Components e Context API - Parte 2)
+// Bundling = Empacotamento -> É o que o Webpack, por exemplo, faz.
 
-// Foi obtido o mesmo resultado do código anterior, porém
-// usando a 'Context API' para resolver o problema de passar
-// props personalizadas para elementos 'JSX' (no caso, quando isso
-// ocorre é lançada uma exceção no console).
+// Para melhorar o desempenho da aplicação, às vezes, o dev vai evitar
+// que um código MUITO GRANDE faça parte do processo de 'bundling'.
+
+// Assim surge o conceito de Code-Splitting.
+// Algumas partes do código são carregadas à medida que o usuário
+// acessa os recursos da aplicação, ou seja, não fica tudo
+'empacotado' no arquivo de 'bundle'.
+
+// Essa prática É JUSTIFICÁVEL, ou seja, não é uma boa prática aplicá-la
+// em situações triviais.
+
+// O código da aula mostra uma técnica para "prever" que o usuário
+// quer acessar o recurso do site que foi SEPARADO do código 'empacotado'.
+
+// No componente 'LazyComponent.jsx', mostra como exportar de modo padrão
+// uma variável 'const'.
