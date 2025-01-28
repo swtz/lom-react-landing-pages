@@ -3,10 +3,4 @@
 // by Luiz Otávio Miranda.
 
 // Seção 4 (React Hooks)
-// Aula 75. Context API + Hooks (unindo as ideias) - Parte 3
-
-// 'src/context/CounterContext/reducer.js'.
-// O 'reducer' NÃO REALIZA AÇÕES. Ele GERENCIA os ESTADOS da aplicação.
-// Ele possui o trabalho de RECEBER o estado e ALTERAR esse estado.
-
-// Quem faz a ação propriamente dita são as 'actions'.
+// Aula 76 Context API + Hooks (unindo as ideias) - Parte 4
