@@ -9,9 +9,7 @@ export const initialState = {
 const Context = createContext();
 
 export const CounterContextProvider = ({ children }) => {
-  return (
-    <Context.Provider value={{ initialState }}>{children}</Context.Provider>
-  );
+  return <Context.Provider value={initialState}>{children}</Context.Provider>;
 };
 
 CounterContextProvider.propTypes = {
