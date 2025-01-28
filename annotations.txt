@@ -3,10 +3,4 @@
 // by Luiz Otávio Miranda.
 
 // Seção 4 (React Hooks)
-// Aula 76 Context API + Hooks (unindo as ideias) - Parte 4
-
-// Essa aula será usado um Design Pattern de 'Factory', ou seja,
-// as 'actions' serão 'fabricadas'.
-
-// Essa aula (vídeo) possui conceitos importantes de como evitar um loop
-// infinito caso se queira disparar uma 'action' usando 'useEffect'.
+// Aula 77 Context API + Hooks (unindo as ideias) - Parte 5
