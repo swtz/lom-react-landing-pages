@@ -2,5 +2,10 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// Seção 4 (React Hooks)
-// Aula 78 Context API + Hooks (unindo as ideias) - Parte 6
+// Seção 6 (React Router Dom v6)
+// Aula 88. Iniciando o projeto com o ViteJS e TypeScript
+
+// Essa seção será feita em outro repositório.
+// A princípio não será enviada para o GitHub, entretanto
+// será feito o versionamento do código e haverá o arquivo
+// 'annotations.txt' também.
