@@ -4,8 +4,8 @@
 
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
-// Esse projeto será redefinido, pois será desenvolvida a
-// parte front-end da landing-page (a parte back-end foi
-// desenvolvida na seção 7).
+// Aula:
+// 116. Configurando o Styled-Components
 
-// --removing-files
+// Nesse projeto, não será utilizado 'css' e sim 'css-in-js' 
+// por meio da biblioteca 'Styled-Components'.
