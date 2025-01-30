@@ -5,7 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 116. Configurando o Styled-Components
-
-// Nesse projeto, não será utilizado 'css' e sim 'css-in-js' 
-// por meio da biblioteca 'Styled-Components'.
+// 118. Configurando o ThemeProvider do styled-components
