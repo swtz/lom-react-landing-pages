@@ -5,41 +5,30 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 119. Configurando o Jest e Jest-styled-components
+// 120. Conhecendo melhor o styled-components
 
-// [in the 'Component.test.jsx']:
-test('renders <Component /> component', () => {
-  const { debug } = renderTheme(<Component />);
-  debug();
-});
+// É possível "herdar" os estilos de um 'styled-component'
+// criado:
+import styled from 'styled-components';
 
-// É possível desestruturar 'debug' do retorno do
-// método 'render'. É útil para analisar como o
-// componente foi desenvolvido.
+export const Container = styled.div`
+  background: ${({ theme }) => theme.colors.secondaryBg};
+`;
 
-// O coach-luiz comentou 2 maneiras de testar estilos:
+export const ContainerTwo = styled(Container)`
+  color: white;
+`;
+// Assim, o componente 'ContainerTwo' herda todas as
+// propriedades css do 'Container' podendo alterar
+// quaisquer 'css rules'.
 
-// 1st: testando estilo por estilo
-// [in the 'Component.test.jsx']:
-test('renders <Component /> component', () => {
-  const { debug } = renderTheme(<Component />);
-  const headingContainer = screen.getByRole('heading', {
-    name: 'Hello',
-  }).parentElement;
-  expect(headingContainer).toHaveStyle({
-    background: theme.colors.secondaryBg, // aqui
-  });
-});
+// É possível SOBRESCREVER a tag gerada (styled.div) por
+// outra:
+export const ContainerThree = styled(Container).attrs({ as: 'article' })`
+  color: white;
+`;
+// Ao inspecionar os elementos da DOM, o componente 'ContainerThree'
+// é uma tag 'article' com as mesmas 'css rules' que o componente 'Container'.
 
-// 2nd: criando um 'snapshot' do Component
-expect(headingContainer).toMatchSnapshot();
-// Assim, é possível gravar um texto do Component
-// exatamente como ele estava no momento dos testes,
-// ou seja, depois de ter sido feita alguma alteração
-// nele, é possível compará-lo com a sua 'fotografia'
-// anterior.
-
-// Para a 2nd maneira, o 'jest' possui um pacote apropriado
-// para testar estilos do tipo 'styled-components':
-
-// npm install jest-styled-components
+// Código da aula:
+// https://gist.github.com/luizomf/0ce6c9938bccac1f4fcc1d8fc1dfc1d8
