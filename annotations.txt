@@ -5,4 +5,41 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 118. Configurando o ThemeProvider do styled-components
+// 119. Configurando o Jest e Jest-styled-components
+
+// [in the 'Component.test.jsx']:
+test('renders <Component /> component', () => {
+  const { debug } = renderTheme(<Component />);
+  debug();
+});
+
+// É possível desestruturar 'debug' do retorno do
+// método 'render'. É útil para analisar como o
+// componente foi desenvolvido.
+
+// O coach-luiz comentou 2 maneiras de testar estilos:
+
+// 1st: testando estilo por estilo
+// [in the 'Component.test.jsx']:
+test('renders <Component /> component', () => {
+  const { debug } = renderTheme(<Component />);
+  const headingContainer = screen.getByRole('heading', {
+    name: 'Hello',
+  }).parentElement;
+  expect(headingContainer).toHaveStyle({
+    background: theme.colors.secondaryBg, // aqui
+  });
+});
+
+// 2nd: criando um 'snapshot' do Component
+expect(headingContainer).toMatchSnapshot();
+// Assim, é possível gravar um texto do Component
+// exatamente como ele estava no momento dos testes,
+// ou seja, depois de ter sido feita alguma alteração
+// nele, é possível compará-lo com a sua 'fotografia'
+// anterior.
+
+// Para a 2nd maneira, o 'jest' possui um pacote apropriado
+// para testar estilos do tipo 'styled-components':
+
+// npm install jest-styled-components
