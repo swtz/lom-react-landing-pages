@@ -2,5 +2,10 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// Seção 7 (Landing pages com Strapi e PostgreSQL (Back-end))
-// This section was completed.
+// Seção 8: Projeto 1: Landing pages com React (Front-end)
+
+// Esse projeto será redefinido, pois será desenvolvida a
+// parte front-end da landing-page (a parte back-end foi
+// desenvolvida na seção 7).
+
+// --removing-files
