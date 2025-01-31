@@ -6,3 +6,13 @@
 
 // Aula:
 // 121. Configurando o Storybook - Parte 1
+
+// storybook version of coach-luiz project -> 6.1.18
+// storybook version of this project -> 8.5.2
+
+// Achei complexo ter de "fazer funcionar" o storybook v6
+// no contexto do React 18, pois, ele possui uma 'peerDependence'
+// atrelada ao React 17.
+
+// Qualquer dúvida há a documentação disponível para consulta:
+// https://storybook.js.org/docs
