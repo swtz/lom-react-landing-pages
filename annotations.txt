@@ -5,30 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 120. Conhecendo melhor o styled-components
-
-// É possível "herdar" os estilos de um 'styled-component'
-// criado:
-import styled from 'styled-components';
-
-export const Container = styled.div`
-  background: ${({ theme }) => theme.colors.secondaryBg};
-`;
-
-export const ContainerTwo = styled(Container)`
-  color: white;
-`;
-// Assim, o componente 'ContainerTwo' herda todas as
-// propriedades css do 'Container' podendo alterar
-// quaisquer 'css rules'.
-
-// É possível SOBRESCREVER a tag gerada (styled.div) por
-// outra:
-export const ContainerThree = styled(Container).attrs({ as: 'article' })`
-  color: white;
-`;
-// Ao inspecionar os elementos da DOM, o componente 'ContainerThree'
-// é uma tag 'article' com as mesmas 'css rules' que o componente 'Container'.
-
-// Código da aula:
-// https://gist.github.com/luizomf/0ce6c9938bccac1f4fcc1d8fc1dfc1d8
+// 121. Configurando o Storybook - Parte 1
