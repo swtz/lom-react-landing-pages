@@ -5,14 +5,20 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 121. Configurando o Storybook - Parte 2
+// 124. Configurando as fontes
 
-// storybook version of coach-luiz project -> 6.1.18
-// storybook version of this project -> 8.5.2
+// CSS tip:
+`
+html {
+  font-size: 62.5%;
+}
 
-// Achei complexo ter de "fazer funcionar" o storybook v6
-// no contexto do React 18, pois, ele possui uma 'peerDependence'
-// atrelada ao React 17.
-
-// Qualquer dúvida há a documentação disponível para consulta:
-// https://storybook.js.org/docs
+body {
+  font-size: 1.6rem;
+};
+`
+// Definindo a prop 'font-size' com a porcentagem acima na tag
+// 'html', é possível utilizar a unidade de medida relativa 'rem'
+// como se fosse 'px', ou seja, os dev's normalmente informam
+// '16px' ou '32px'. Com essas configurações, é possível utilizar
+// '1.6rem' ou '3.2rem'.
