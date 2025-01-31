@@ -5,7 +5,7 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 121. Configurando o Storybook - Parte 1
+// 121. Configurando o Storybook - Parte 2
 
 // storybook version of coach-luiz project -> 6.1.18
 // storybook version of this project -> 8.5.2
