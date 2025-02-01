@@ -2,7 +2,29 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
+import styled from 'styled-components';
+
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
 // 125. Criando o componente de Heading - Parte 1
+
+// Obs.:
+// styled-component:
+export const Title = styled.h1.attrs({ as: 'div' })``;
+
+// component:
+// eslint-disable-next-line react/prop-types
+export const Heading = ({ children, colorDark = true, as = 'h1' }) => {
+  return (
+    <Styled.Title colorDark={colorDark} as={as}>
+      {children}
+    </Styled.Title>
+  );
+};
+
+// É importante prestar atenção, pois, ao passar a prop 'as' para um
+// 'styled-component', ele consegue identificar essa 'prop' como uma
+// propriedade que é passada para o objeto dentro do método '.attrs',
+// ou seja, é possível alternar de maneira dinâmica o tipo de elemento
+// que o styled-component retornará.
