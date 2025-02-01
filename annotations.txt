@@ -12,3 +12,8 @@
 
 // Errando primeiro, é possível saber o valor que uma propriedade
 // recebeu (é exibido no terminal o porquê o teste falhou).
+
+// [in the 'Heading.test.jsx']:
+// <Heading colorDark>texto</Heading>;
+// Ao testar uma 'prop' do tipo boolean, por padrão,
+// a 'prop' assume o valor 'true'.
