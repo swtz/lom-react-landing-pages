@@ -5,4 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 126. Criando o componente de Heading - Parte 2
+// 127. Testes: Componente Heading
