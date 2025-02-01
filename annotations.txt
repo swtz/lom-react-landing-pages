@@ -6,3 +6,9 @@
 
 // Aula:
 // 127. Testes: Componente Heading
+
+// O coach-luiz sempre "quebra" o teste primeiro, pra depois
+// começar a construir as validações subsequentes.
+
+// Errando primeiro, é possível saber o valor que uma propriedade
+// recebeu (é exibido no terminal o porquê o teste falhou).
