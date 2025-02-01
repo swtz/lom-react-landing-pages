@@ -5,20 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 124. Configurando as fontes
-
-// CSS tip:
-`
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-size: 1.6rem;
-};
-`
-// Definindo a prop 'font-size' com a porcentagem acima na tag
-// 'html', é possível utilizar a unidade de medida relativa 'rem'
-// como se fosse 'px', ou seja, os dev's normalmente informam
-// '16px' ou '32px'. Com essas configurações, é possível utilizar
-// '1.6rem' ou '3.2rem'.
+// 125. Criando o componente de Heading - Parte 1
