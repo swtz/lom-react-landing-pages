@@ -5,4 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 130. Componente de texto - TextComponent
+// 131. Testes: TextComponent
