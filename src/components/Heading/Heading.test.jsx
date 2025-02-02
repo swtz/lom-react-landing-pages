@@ -16,6 +16,29 @@ describe('<Heading />', () => {
     });
   });
 
+  it('should match snapshot', () => {
+    const { container } = renderTheme(<Heading>texto</Heading>);
+    expect(container.firstChild).toMatchInlineSnapshot(`
+      .c0 {
+        color: #0A1128;
+        font-size: 6.4rem;
+        text-transform: none;
+      }
+
+      @media (max-width:768px) {
+        .c0 {
+          font-size: 4.0rem;
+        }
+      }
+
+      <h1
+        class="c0"
+      >
+        texto
+      </h1>
+    `);
+  });
+
   it('should render with white color', () => {
     renderTheme(<Heading colorDark={false}>texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'texto' });
@@ -67,7 +90,7 @@ describe('<Heading />', () => {
   });
 
   it('should render correct font-size when using mobile', () => {
-    const { rerender } = renderTheme(<Heading size="huge">huge-text</Heading>);
+    renderTheme(<Heading size="huge">huge-text</Heading>);
     const heading = screen.getByRole('heading', { name: 'huge-text' });
 
     expect(heading).toHaveStyleRule('font-size', theme.font.sizes.xlarge, {
