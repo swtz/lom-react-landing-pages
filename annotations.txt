@@ -5,15 +5,11 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 127. Testes: Componente Heading
+// 128. Criando snippets para melhor produtividade
 
-// O coach-luiz sempre "quebra" o teste primeiro, pra depois
-// começar a construir as validações subsequentes.
-
-// Errando primeiro, é possível saber o valor que uma propriedade
-// recebeu (é exibido no terminal o porquê o teste falhou).
-
-// [in the 'Heading.test.jsx']:
-// <Heading colorDark>texto</Heading>;
-// Ao testar uma 'prop' do tipo boolean, por padrão,
-// a 'prop' assume o valor 'true'.
+// Foram criados 4 snippets para automatizar a criação do
+// conteúdo dos arquivos: 
+// -> 'styled' for 'styles.js';
+// -> 'component' for 'index.jsx';
+// -> 'storybook' for 'stories.jsx';
+// -> 'test react' for 'Component.test.jsx'.
