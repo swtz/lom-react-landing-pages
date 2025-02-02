@@ -5,11 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 128. Criando snippets para melhor produtividade
-
-// Foram criados 4 snippets para automatizar a criação do
-// conteúdo dos arquivos: 
-// -> 'styled' for 'styles.js';
-// -> 'component' for 'index.jsx';
-// -> 'storybook' for 'stories.jsx';
-// -> 'test react' for 'Component.test.jsx'.
+// 131. Testes: TextComponent
