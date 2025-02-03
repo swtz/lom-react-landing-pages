@@ -5,4 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 133. Componente NavLinks com testes - Parte 1
+// 135. Configurando o coverage do Jest
