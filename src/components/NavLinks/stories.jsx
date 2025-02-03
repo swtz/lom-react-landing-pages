@@ -4,7 +4,7 @@ export default {
   title: 'NavLinks',
   component: NavLinks,
   args: {
-    children: 'Olá, mundo!',
+    links: [],
   },
   argTypes: {
     children: { type: 'string' },
