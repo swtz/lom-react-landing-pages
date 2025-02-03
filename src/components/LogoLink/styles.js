@@ -2,6 +2,13 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.a`
   ${({ theme }) => css`
-  color: ${theme.colors.primaryColor};
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+
+  > img {
+    max-height: 3rem;
+  }
   `};
 `;
