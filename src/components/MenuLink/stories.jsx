@@ -4,9 +4,12 @@ export default {
   title: 'MenuLink',
   args: {
     children: 'texto do MenuLink',
+    link: 'https://github.com/swtz',
   },
   argTypes: {
     children: { type: 'string' },
+    link: { type: 'string' },
+    newTab: { type: 'boolean' },
   },
 };
 

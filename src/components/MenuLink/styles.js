@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 
-export const StyledComponent = styled.a`
+export const Container = styled.a`
   ${({ theme }) => css`
   color: ${theme.colors.primaryColor};
   `};
