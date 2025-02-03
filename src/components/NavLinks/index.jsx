@@ -13,7 +13,6 @@ export const NavLinks = ({ links = [] }) => {
 };
 
 NavLinks.propTypes = {
-  children: P.node.isRequired,
   links: P.arrayOf(
     P.shape({
       children: P.string.isRequired,
