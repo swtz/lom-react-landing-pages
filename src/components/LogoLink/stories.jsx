@@ -4,11 +4,24 @@ export default {
   title: 'LogoLink',
   component: LogoLink,
   args: {
-    children: 'Hello, LogoLink!',
-  },
-  argTypes: {
-    children: { type: 'string' },
+    text: 'Hello, LogoLink!',
+    srcImg: 'assets/images/logo-github.svg',
+    link: 'http://localhost',
   },
 };
 
-export const Template = (args) => <LogoLink {...args} />;
+export const ImageOnly = (args) => (
+  <div>
+    <LogoLink {...args} />
+  </div>
+);
+
+export const TextOnly = (args) => (
+  <div>
+    <LogoLink {...args} />
+  </div>
+);
+
+TextOnly.args = {
+  srcImg: '',
+};
