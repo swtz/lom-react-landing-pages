@@ -2,6 +2,8 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.a`
   ${({ theme }) => css`
-  color: ${theme.colors.primaryColor};
+  display: block;
+  text-decoration: none;
+  font-size: ${theme.font.sizes.small};
   `};
 `;
