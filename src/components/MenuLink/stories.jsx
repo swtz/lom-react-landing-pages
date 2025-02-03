@@ -2,6 +2,7 @@ import { MenuLink } from '.';
 
 export default {
   title: 'MenuLink',
+  component: MenuLink,
   args: {
     children: 'texto do MenuLink',
     link: 'https://github.com/swtz',

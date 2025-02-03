@@ -24,8 +24,10 @@ describe('<MenuLink />', () => {
   });
 
   it('should match snapshot', () => {
-    renderTheme(<MenuLink link="https://localhost">link</MenuLink>);
-    expect(screen.getByRole('link', { name: 'link' })).toMatchInlineSnapshot(`
+    const { container } = renderTheme(
+      <MenuLink link="https://localhost">link</MenuLink>,
+    );
+    expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
         display: block;
         -webkit-text-decoration: none;
@@ -39,7 +41,7 @@ describe('<MenuLink />', () => {
       .c0::after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: 0.8rem;
         left: 50%;
         width: 0;
         height: 0.2rem;
