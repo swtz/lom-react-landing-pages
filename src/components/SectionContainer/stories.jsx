@@ -4,10 +4,20 @@ export default {
   title: 'SectionContainer',
   component: SectionContainer,
   args: {
-    children: 'SectionContainer',
+    children: (
+      <div>
+        <h1>SectionContainer</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto itaque
+          consequuntur laborum dolor facere rem voluptas commodi ullam, non,
+          eius eos doloribus debitis nostrum? Obcaecati accusantium a suscipit
+          ab ea.
+        </p>
+      </div>
+    ),
   },
   argsTypes: {
-    children: { type: 'string' },
+    children: { disable: true },
   },
 };
 
