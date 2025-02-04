@@ -5,10 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 137. Componentes de container e background
-
-// O componente 'SectionContainer' é apenas um componente de estilo.
-// Ele pode ser criado apenas usando o arquivo 'styles.js', ou seja,
-// ele pode ser apenas um 'styled-component'.
-// O coach-luiz optou por criar esse componente da maneira como todos
-// os outros foram criados.
+// 138. Testes: Componentes de container e background

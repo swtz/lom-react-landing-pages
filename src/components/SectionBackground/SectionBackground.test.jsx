@@ -3,8 +3,27 @@ import { renderTheme } from '../../styles/render-theme';
 import { SectionBackground } from '.';
 
 describe('<SectionBackground />', () => {
-  it('should render', () => {
-    renderTheme(<SectionBackground>Children</SectionBackground>);
-    expect(screen.getByRole('heading')).toBeInTheDocument();
+  it('should render with background dark', () => {
+    const { container } = renderTheme(
+      <SectionBackground background>
+        <h1>leonarthinker</h1>
+      </SectionBackground>,
+    );
+    expect(
+      screen.getByRole('heading', { name: 'leonarthinker' }),
+    ).toBeInTheDocument();
+    expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it('should render with background light', () => {
+    const { container } = renderTheme(
+      <SectionBackground>
+        <h1>leonarthinker</h1>
+      </SectionBackground>,
+    );
+    expect(
+      screen.getByRole('heading', { name: 'leonarthinker' }),
+    ).toBeInTheDocument();
+    expect(container.firstChild).toMatchSnapshot();
   });
 });
