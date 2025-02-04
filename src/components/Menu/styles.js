@@ -23,6 +23,24 @@ export const Container = styled.div`
       margin-top: 0;
       margin-bottom: 0;
     }
+
+    @media ${theme.media.lteMedium} {
+      height: 100vh;
+
+      > ${SectionContainer} {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 100vh;
+        align-items: center; // alinha 'os filhos' no eixo Y
+      }
+
+      & ${Heading} {
+        padding-bottom: ${theme.spacings.large};
+        display: flex;
+        justify-content: center;
+      }
+    } 
   `}
 `;
 
