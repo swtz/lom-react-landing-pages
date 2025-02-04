@@ -1,17 +1,22 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 import { SectionContainer } from '../SectionContainer';
+import { LogoLink } from '../LogoLink';
+import { NavLinks } from '../NavLinks';
 
-export const Menu = ({ children }) => {
+export const Menu = ({ links = [], logoData }) => {
   return (
     <Styled.Container>
       <SectionContainer>
-        <h1>{children}</h1>
+        <Styled.MenuContainer>
+          <LogoLink />
+        </Styled.MenuContainer>
       </SectionContainer>
     </Styled.Container>
   );
 };
 
 Menu.propTypes = {
-  children: P.node.isRequired,
+  ...NavLinks.propTypes,
+  logoData: P.shape(LogoLink.propTypes).isRequired,
 };
