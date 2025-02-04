@@ -13,6 +13,7 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
     border-bottom: ${theme.colors.mediumGray};
+    background: ${theme.colors.white};
 
     > ${SectionContainer} {
      padding-top: 0;
@@ -33,6 +34,7 @@ export const Container = styled.div`
         grid-template-rows: 1fr;
         height: 100vh;
         align-items: center; // alinha 'os filhos' no eixo Y
+        overflow-y: auto;
       }
 
       & ${Heading} {
