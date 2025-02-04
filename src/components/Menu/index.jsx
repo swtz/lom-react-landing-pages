@@ -9,7 +9,8 @@ export const Menu = ({ links = [], logoData }) => {
     <Styled.Container>
       <SectionContainer>
         <Styled.MenuContainer>
-          <LogoLink />
+          <LogoLink {...logoData} />
+          <NavLinks links={links} />
         </Styled.MenuContainer>
       </SectionContainer>
     </Styled.Container>
