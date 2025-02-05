@@ -70,6 +70,13 @@ export const Button = styled.button`
     background: ${theme.colors.primaryColor};
     color: ${theme.colors.white};
     border: none;
+    display: none;
+
+    @media ${theme.media.lteMedium} {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     > svg {
       width: 2.5rem;
