@@ -5,4 +5,8 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 139. Componente Menu - Parte 1
+// 140. Componente Menu - Parte 2
+
+// Portal que oferece MUITOS ícones
+// construídos com a lib styled-components
+// https://styled-icons.dev/
