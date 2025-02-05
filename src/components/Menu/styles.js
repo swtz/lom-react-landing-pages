@@ -14,10 +14,8 @@ export const Container = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     width: 100%;
-    height: 100%;
-    border-bottom: ${theme.colors.mediumGray};
+    border-bottom: 0.1rem solid ${theme.colors.mediumGray};
     background: ${theme.colors.white};
     transition: all 300ms ease-in-out;
 
@@ -64,6 +62,7 @@ export const MenuContainer = styled.div`
     @media ${theme.media.lteMedium} {
       display: block;
       text-align: center;
+      padding: ${theme.spacings.large};
     }
   `}
 `;
