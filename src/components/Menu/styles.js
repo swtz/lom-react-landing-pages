@@ -62,6 +62,7 @@ export const MenuContainer = styled.div`
     @media ${theme.media.lteMedium} {
       display: block;
       text-align: center;
+      padding: ${theme.spacings.large};
     }
   `}
 `;
