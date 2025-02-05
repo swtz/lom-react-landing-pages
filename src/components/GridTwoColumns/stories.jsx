@@ -11,8 +11,18 @@ export default {
   },
 };
 
-export const Template = (args) => (
+export const Light = (args) => (
   <div>
     <GridTwoColumns {...args} />
   </div>
 );
+
+export const Dark = (args) => (
+  <div>
+    <GridTwoColumns {...args} />
+  </div>
+);
+
+Dark.args = {
+  background: true,
+};
