@@ -10,3 +10,32 @@
 // Portal que oferece MUITOS ícones
 // construídos com a lib styled-components
 // https://styled-icons.dev/
+
+// Ao usar algum component dessa lib, é importante
+// definir alguma regras css, para que o ícone aparece
+// na tela de fato:
+// Exemplo: 
+// Ícone: '@styled-icons/material-outlined/Menu';
+`
+export const Button = styled.button`
+  ${({ theme }) => css`
+    z-index: 6;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+  `}
+`;
+
+`
+// Quando esse "icon-component" é usado dentro de um
+// 'styled-component', para se referir a ele, pode-se
+// usar o seletor css de 'filho direto':
+// Exemplo:
+`
+> svg {
+  <css-rules>;
+}
+`
+// Ou seja, esses componentes são vetores (.svg) internamente.

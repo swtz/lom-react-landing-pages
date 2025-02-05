@@ -61,6 +61,19 @@ export const MenuContainer = styled.div`
 
 export const Button = styled.button`
   ${({ theme }) => css`
-    
+    z-index: 6;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    background: ${theme.colors.primaryColor};
+    color: ${theme.colors.white};
+    border: none;
+
+    > svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
   `}
 `;
