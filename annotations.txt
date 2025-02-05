@@ -39,3 +39,32 @@ export const Button = styled.button`
 }
 `
 // Ou seja, esses componentes são vetores (.svg) internamente.
+
+// CSS tip:
+// 'display: none' Vs. 'visibility: hidden; opacity: 0;'
+// Ambas as regras css provocam um efeito parecido, pois
+// ambas escondem o elemento da tela.
+// Entretanto, caso o dev queira aplicar algum efeito
+// que mude o estado da visibilidade do elemento, as
+// propriedades css
+`
+visibility: hidden;
+opacity: 0;
+`
+// permitem que o dev aplique com efeito desejado com a
+// propriedade 'transition', por exemplo.
+// Por outro lado, a propriedade 'display: none' não
+// permite a aplicação de nenhum efeito.
+
+// #!important:
+// Pesquisar sobre a propriedade css 'pointer-events'.
+// Ela permite retirar quaisquer eventos do tipo 'Pointer'
+// de um elemento. Isso pode ser útil dependendo da lógica do
+// front-end que o programador quer aplicar.
+// Exemplo: (usando styled-components)
+`
+pointer-events: ${visible ? 'none' : 'all'};
+`
+// Ou seja, com base na condicional, são retirados
+// os eventos sintéticos do elemento ou são adicionados
+// todos a ele.

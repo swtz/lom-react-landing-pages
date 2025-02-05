@@ -12,8 +12,10 @@ export const Menu = ({ links = [], logoData }) => {
 
   return (
     <>
-      <Styled.Button>{visible ? <CloseIcon /> : <MenuIcon />}</Styled.Button>
-      <Styled.Container visible={visible}>
+      <Styled.Button visible={visible} onClick={() => setVisible(true)}>
+        {visible ? <CloseIcon /> : <MenuIcon />}
+      </Styled.Button>
+      <Styled.Container visible={visible} onClick={() => setVisible(false)}>
         <SectionContainer>
           <Styled.MenuContainer>
             <LogoLink {...logoData} />
