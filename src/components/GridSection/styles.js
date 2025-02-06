@@ -26,6 +26,12 @@ export const GridElement = styled.div`
     left: 5rem;
   }
 
+  @media ${theme.media.lteMedium} {
+    ${HeadingContainer} {
+      max-width: 80%;
+    }
+  }
+
   ${HeadingContainer}::before {
     counter-increment: grid-counter;
     content: counter(grid-counter);
