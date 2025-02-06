@@ -29,4 +29,8 @@ export const GlobalStyles = createGlobalStyle`
     margin: ${({ theme }) => theme.spacings.medium};
     padding: ${({ theme }) => theme.spacings.medium};
   }
+
+  a {
+    color: ${({ theme }) => theme.colors.secondaryColor};
+  }
 `;

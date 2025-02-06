@@ -1,3 +1,4 @@
+import { background } from 'storybook/internal/theming';
 import { GridContent } from '.';
 import mock from './mock';
 
@@ -7,10 +8,22 @@ export default {
   args: mock,
 };
 
-export const Template = (args) => {
+export const Light = (args) => {
   return (
     <div>
       <GridContent {...args} />
     </div>
   );
+};
+
+export const Dark = (args) => {
+  return (
+    <div>
+      <GridContent {...args} />
+    </div>
+  );
+};
+
+Dark.args = {
+  background: true,
 };
