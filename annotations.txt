@@ -5,4 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 143. Testes: GridTwoColumns
+// 144. Componente com testes: GridContent
