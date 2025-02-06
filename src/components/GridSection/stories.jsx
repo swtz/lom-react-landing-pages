@@ -1,14 +1,10 @@
 import { GridSection } from '.';
+import mock from './mock';
 
 export default {
   title: 'GridSection',
   component: GridSection,
-  args: {
-    children: 'GridSection',
-  },
-  argsTypes: {
-    children: { type: 'string' },
-  },
+  args: mock,
 };
 
 export const Template = (args) => {
