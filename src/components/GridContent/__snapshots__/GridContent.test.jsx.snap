@@ -47,6 +47,18 @@ exports[`<GridContent /> should render grid content 1`] = `
   }
 }
 
+@media (max-width:768px) {
+  .c1 {
+    padding: 1.6rem;
+  }
+}
+
+@media (max-width:414px) {
+  .c1 {
+    padding: .4rem;
+  }
+}
+
 <div>
   <div
     class="c0"
@@ -178,6 +190,18 @@ exports[`<GridContent /> should render grid content 2`] = `
 @media (max-width:768px) {
   .c3 {
     font-size: 4.0rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c1 {
+    padding: 1.6rem;
+  }
+}
+
+@media (max-width:414px) {
+  .c1 {
+    padding: .4rem;
   }
 }
 

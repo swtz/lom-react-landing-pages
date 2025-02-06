@@ -68,6 +68,18 @@ exports[`<GridTwoColumns /> should render two columns grid 1`] = `
   }
 }
 
+@media (max-width:768px) {
+  .c1 {
+    padding: 1.6rem;
+  }
+}
+
+@media (max-width:414px) {
+  .c1 {
+    padding: .4rem;
+  }
+}
+
 <div>
   <div
     class="c0"

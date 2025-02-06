@@ -105,6 +105,18 @@ exports[`<Menu /> should not render links 1`] = `
 }
 
 @media (max-width:768px) {
+  .c4 {
+    padding: 1.6rem;
+  }
+}
+
+@media (max-width:414px) {
+  .c4 {
+    padding: .4rem;
+  }
+}
+
+@media (max-width:768px) {
   .c2 {
     height: 100vh;
     visibility: hidden;
@@ -326,6 +338,18 @@ exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
+}
+
+@media (max-width:768px) {
+  .c4 {
+    padding: 1.6rem;
+  }
+}
+
+@media (max-width:414px) {
+  .c4 {
+    padding: .4rem;
+  }
 }
 
 @media (max-width:768px) {

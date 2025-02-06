@@ -17,6 +17,18 @@ describe('<SectionContainer />', () => {
         padding: 3.2rem;
       }
 
+      @media (max-width:768px) {
+        .c0 {
+          padding: 1.6rem;
+        }
+      }
+
+      @media (max-width:414px) {
+        .c0 {
+          padding: .4rem;
+        }
+      }
+
       <div
         class="c0"
       >
