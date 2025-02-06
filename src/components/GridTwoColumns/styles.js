@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { Title as Heading } from '../Heading/styles';
 
 export const Container = styled.div`
-  ${({ theme, background }) => css`
+  ${({ theme }) => css`
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center; // alinha 'os filhos' no eixo Y
@@ -15,7 +15,6 @@ export const Container = styled.div`
 
     & ${Heading} {
       margin-bottom: ${theme.spacings.xlarge};
-      color: ${background ? theme.colors.white : theme.colors.primaryColor};
     }
 
   `};
