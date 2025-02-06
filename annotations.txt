@@ -5,29 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 144. Componente com testes: GridContent
-
-// Esse componente permitirá que um usuário
-// INJETE HTML no código. Por isso, o coach-luiz
-// reforçou o quão PERIGOSA é essa prática, pois
-// um usuário MALICIOSO pode INJETAR CÓDIGO NOCIVO
-// que afeta não só a aplicação, mas, por exemplo,
-// o servidor que ela está hospedada e etc.
-
-// A API criada na seção 6 (via Strapi) é quem
-// fornecerá os dados no formato 'html' os quais
-// o componente 'GridContent' irá renderizar.
-
-// Ou seja, há uma relação de 'confiança' entre
-// a aplicação e a API que fornecerá os dados
-// de modo seguro, por isso a API deve ser liberada
-// somente para usuários confiáveis e não para
-// o público geral.
-
-// Exemplo de uso do recurso que permite que um
-// 'Rich Text' ou 'Hypertext' seja renderizado:
-export const TextComponent = ({ children }) => {
-  return <Styled.Container dangerouslySetInnerHTML={{ __html: children }} />;
-};
-// Observando o componente no storybook, todas as 'tags' html
-// são renderizadas.
+// 145. Componente GridText
