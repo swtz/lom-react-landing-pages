@@ -1,16 +1,28 @@
-import { GridSection } from '.';
+import { GridText } from '.';
 import mock from './mock';
 
 export default {
-  title: 'GridSection',
-  component: GridSection,
+  title: 'GridText',
+  component: GridText,
   args: mock,
 };
 
-export const Template = (args) => {
+export const Light = (args) => {
   return (
     <div>
-      <GridSection {...args} />
+      <GridText {...args} />
     </div>
   );
+};
+
+export const Dark = (args) => {
+  return (
+    <div>
+      <GridText {...args} />
+    </div>
+  );
+};
+
+Dark.args = {
+  background: true,
 };

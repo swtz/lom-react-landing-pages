@@ -4,12 +4,7 @@ import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
 import { TextComponent } from '../TextComponent';
 
-export const GridSection = ({
-  title,
-  description,
-  grid,
-  background = false,
-}) => {
+export const GridText = ({ title, description, grid, background = false }) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container>
@@ -32,7 +27,7 @@ export const GridSection = ({
   );
 };
 
-GridSection.propTypes = {
+GridText.propTypes = {
   title: P.string.isRequired,
   description: P.string.isRequired,
   background: P.bool,

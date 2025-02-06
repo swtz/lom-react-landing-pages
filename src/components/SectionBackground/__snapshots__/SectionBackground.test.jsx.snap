@@ -23,6 +23,18 @@ exports[`<SectionBackground /> should render with background dark 1`] = `
   padding: 3.2rem;
 }
 
+@media (max-width:768px) {
+  .c1 {
+    padding: 1.6rem;
+  }
+}
+
+@media (max-width:414px) {
+  .c1 {
+    padding: .4rem;
+  }
+}
+
 <div
   class="c0"
 >
@@ -55,6 +67,18 @@ exports[`<SectionBackground /> should render with background light 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+}
+
+@media (max-width:768px) {
+  .c1 {
+    padding: 1.6rem;
+  }
+}
+
+@media (max-width:414px) {
+  .c1 {
+    padding: .4rem;
+  }
 }
 
 <div
