@@ -1,4 +1,3 @@
-import { background } from 'storybook/internal/theming';
 import { GridContent } from '.';
 import mock from './mock';
 
