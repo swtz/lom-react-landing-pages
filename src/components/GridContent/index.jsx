@@ -1,14 +1,24 @@
 import P from 'prop-types';
 import * as Styled from './styles';
+import { Heading } from '../Heading';
+import { SectionBackground } from '../SectionBackground';
+import { TextComponent } from '../TextComponent';
 
-export const GridContent = ({ children }) => {
+export const GridContent = ({ title, html, background = false }) => {
   return (
-    <Styled.Container>
-      <h1>{children}</h1>
-    </Styled.Container>
+    <SectionBackground>
+      <Styled.Container>
+        <Heading uppercase colorDark={!background}>
+          {title}
+        </Heading>
+        <TextComponent>{html}</TextComponent>
+      </Styled.Container>
+    </SectionBackground>
   );
 };
 
 GridContent.propTypes = {
-  children: P.node.isRequired,
+  title: P.string.isRequired,
+  html: P.string.isRequired,
+  background: P.bool,
 };

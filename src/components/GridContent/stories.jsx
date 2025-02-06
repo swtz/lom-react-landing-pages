@@ -1,14 +1,10 @@
 import { GridContent } from '.';
+import mock from './mock';
 
 export default {
   title: 'GridContent',
   component: GridContent,
-  args: {
-    children: 'GridContent',
-  },
-  argsTypes: {
-    children: { type: 'string' },
-  },
+  args: mock,
 };
 
 export const Template = (args) => {
