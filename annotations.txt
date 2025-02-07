@@ -5,11 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 148. Componente Footer com testes
-
-// Coach-Luiz tip:
-// Pode-se refatorar o projeto para arrumar a questão
-// das tag's semânticas, a fim de que o 'html' final
-// fique mais coeso.
-// No momento, a grande maioria dos Componentes React
-// e Styled-Components estão retornando 'div'.
+// 149. Componente GoTop
