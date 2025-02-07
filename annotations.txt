@@ -5,4 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 149. Componente GoTop
+// 151. Criando um template base - Parte 2

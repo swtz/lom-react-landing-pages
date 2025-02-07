@@ -26,7 +26,7 @@ export const GridElement = styled.div`
     left: 5rem;
   }
 
-  @media ${theme.media.lteMedium} {
+  @media ${theme.media.lteLarge} {
     ${HeadingContainer} {
       max-width: 80%;
     }
