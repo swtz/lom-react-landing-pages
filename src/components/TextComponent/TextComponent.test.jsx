@@ -16,11 +16,11 @@ describe('<TextComponent />', () => {
         font-size: 2.4rem;
       }
 
-      <p
+      <div
         class="c0"
       >
         content
-      </p>
+      </div>
     `);
   });
 
@@ -33,7 +33,7 @@ describe('<TextComponent />', () => {
 
   it('should render correct paragraph element', () => {
     const { container } = renderTheme(<TextComponent>content</TextComponent>);
-    const p = container.querySelector('p');
-    expect(p.tagName.toLowerCase()).toBe('p');
+    const div = container.querySelector('div');
+    expect(div.tagName.toLowerCase()).toBe('div');
   });
 });

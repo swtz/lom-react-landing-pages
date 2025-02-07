@@ -4,10 +4,7 @@ export default {
   title: 'Footer',
   component: Footer,
   args: {
-    children: `<a rel="nofollow" target="_blank" href="https://github.com/swtz">Feito com ❤️ por L.Lüders</a>`,
-  },
-  argsTypes: {
-    children: { type: 'string' },
+    html: `<a rel="nofollow" target="_blank" href="https://github.com/swtz">Feito com ❤️ por L.Lüders</a>`,
   },
 };
 
