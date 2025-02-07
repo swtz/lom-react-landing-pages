@@ -104,11 +104,11 @@ exports[`<GridText /> should render grid component 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c5 c6"
         >
           Lorem ipsum dolor sit amet. Et asperiores explicaboEst earum ea accusamus similique aut ipsa totam aut laborum quidem rem vero quisquam est velit labore? Eos veniam atqueUt consequatur id eius enim.
-        </p>
+        </div>
         <div
           class="c7"
         >
@@ -120,11 +120,11 @@ exports[`<GridText /> should render grid component 1`] = `
             >
               Teste 1
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit amet. Et asperiores explicaboEst earum ea accusamus similique aut ipsa totam aut laborum quidem rem vero quisquam est velit labore? Eos veniam atqueUt consequatur id eius enim.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -134,11 +134,11 @@ exports[`<GridText /> should render grid component 1`] = `
             >
               Teste 2
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit amet. Et asperiores explicaboEst earum ea accusamus similique aut ipsa totam aut laborum quidem rem vero quisquam est velit labore? Eos veniam atqueUt consequatur id eius enim.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -148,11 +148,11 @@ exports[`<GridText /> should render grid component 1`] = `
             >
               Teste 3
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit amet. Et asperiores explicaboEst earum ea accusamus similique aut ipsa totam aut laborum quidem rem vero quisquam est velit labore? Eos veniam atqueUt consequatur id eius enim.
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -265,11 +265,11 @@ exports[`<GridText /> should render grid component without background 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c5 c6"
         >
           Lorem ipsum dolor sit amet. Et asperiores explicaboEst earum ea accusamus similique aut ipsa totam aut laborum quidem rem vero quisquam est velit labore? Eos veniam atqueUt consequatur id eius enim.
-        </p>
+        </div>
         <div
           class="c7"
         >
@@ -281,11 +281,11 @@ exports[`<GridText /> should render grid component without background 1`] = `
             >
               Teste 1
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit amet. Et asperiores explicaboEst earum ea accusamus similique aut ipsa totam aut laborum quidem rem vero quisquam est velit labore? Eos veniam atqueUt consequatur id eius enim.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -295,11 +295,11 @@ exports[`<GridText /> should render grid component without background 1`] = `
             >
               Teste 2
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit amet. Et asperiores explicaboEst earum ea accusamus similique aut ipsa totam aut laborum quidem rem vero quisquam est velit labore? Eos veniam atqueUt consequatur id eius enim.
-            </p>
+            </div>
           </div>
           <div
             class="c8"
@@ -309,11 +309,11 @@ exports[`<GridText /> should render grid component without background 1`] = `
             >
               Teste 3
             </h3>
-            <p
+            <div
               class="c5 c6"
             >
               Lorem ipsum dolor sit amet. Et asperiores explicaboEst earum ea accusamus similique aut ipsa totam aut laborum quidem rem vero quisquam est velit labore? Eos veniam atqueUt consequatur id eius enim.
-            </p>
+            </div>
           </div>
         </div>
       </div>

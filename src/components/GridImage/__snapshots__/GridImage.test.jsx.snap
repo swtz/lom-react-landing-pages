@@ -95,11 +95,11 @@ exports[`<GridText /> should render grid component 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c4 c5"
         >
           Lorem ipsum dolor sit amet. Et asperiores explicaboEst earum ea accusamus similique aut ipsa totam aut laborum quidem rem vero quisquam est velit labore? Eos veniam atqueUt consequatur id eius enim.
-        </p>
+        </div>
         <div
           class="c6"
         >
@@ -259,11 +259,11 @@ exports[`<GridText /> should render grid component without background 1`] = `
         >
           My grid
         </h2>
-        <p
+        <div
           class="c4 c5"
         >
           Lorem ipsum dolor sit amet. Et asperiores explicaboEst earum ea accusamus similique aut ipsa totam aut laborum quidem rem vero quisquam est velit labore? Eos veniam atqueUt consequatur id eius enim.
-        </p>
+        </div>
         <div
           class="c6"
         >
