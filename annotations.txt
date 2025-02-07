@@ -5,4 +5,15 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 149. Componente GoTop
+// 150. Criando um template base - Parte 1
+
+// Agora, será criado um template base com alguns
+// componentes obrigatórios ou que se repetem na
+// landing page.
+
+// Os componentes são o Menu, Footer e GoTop.
+
+// O template foi criado na pasta '<rootDir>/src/templates/<template-name>'.
+// O template 'Base' é um componente React, porém que agrupa outros componentes.
+// O coach-luiz mostrará o comportamento desse "componente grande" no storybook
+// também.
