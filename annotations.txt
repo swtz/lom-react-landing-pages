@@ -7,13 +7,17 @@
 // Aula:
 // 150. Criando um template base - Parte 1
 
-// Agora, será criado um template base com alguns
-// componentes obrigatórios ou que se repetem na
-// landing page.
+// "Prop Drilling" -> É quando um componente no nível mais alto
+// recebe 'props' e essas são passadas para outro componente de
+// nível mais baixo e assim sucessivamente.
 
-// Os componentes são o Menu, Footer e GoTop.
+// Quando há uma cadeia de componentes muito grande, faz-se necessário
+// usar um 'Context Manager'. Entretanto, esse projeto, por ser uma
+// landing page, a prática de 'prop drilling' não será um problema,
+// pois o projeto foi estruturado de modo a "gerenciar" essas 'props'
+// de uma maneira "sustentável", ou seja, caso surjam algumas modificações
+// nos componentes, não será complexo demais para fazer a manutenção
+// dessas props.
 
-// O template foi criado na pasta '<rootDir>/src/templates/<template-name>'.
-// O template 'Base' é um componente React, porém que agrupa outros componentes.
-// O coach-luiz mostrará o comportamento desse "componente grande" no storybook
-// também.
+// A prop 'children' do componente 'Base' é que será o 'html' dinâmico
+// do site.

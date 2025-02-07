@@ -1,13 +1,22 @@
 import { Base } from '.';
+import { GridText } from '../../components/GridText';
+import mock from './mock';
+import gridMock from '../../components/GridText/mock';
 
 export default {
-  title: 'Base',
+  title: 'Templates/Base',
   component: Base,
   args: {
-    children: 'Base',
-  },
-  argsTypes: {
-    children: { type: 'string' },
+    children: (
+      <>
+        <GridText {...gridMock} background />
+        <GridText {...gridMock} />
+        <GridText {...gridMock} background />
+        <GridText {...gridMock} />
+        <GridText {...gridMock} background />
+      </>
+    ),
+    ...mock,
   },
 };
 
