@@ -1,11 +1,14 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 import { TextComponent } from '../TextComponent';
+import { SectionContainer } from '../SectionContainer';
 
 export const Footer = ({ children }) => {
   return (
     <Styled.Container>
-      <TextComponent>{children}</TextComponent>
+      <SectionContainer>
+        <TextComponent>{children}</TextComponent>
+      </SectionContainer>
     </Styled.Container>
   );
 };
