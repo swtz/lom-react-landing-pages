@@ -11,7 +11,7 @@ export const Container = styled.div`
     }
 
     @media ${theme.media.lteSmall} {
-      padding: .4rem;
+      padding: ${theme.spacings.xsmall};
     }
   `}
 `;
