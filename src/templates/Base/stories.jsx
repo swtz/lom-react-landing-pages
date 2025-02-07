@@ -14,6 +14,7 @@ export default {
         <GridText {...gridMock} background />
         <GridText {...gridMock} />
         <GridText {...gridMock} background />
+        <GridText {...gridMock} />
       </>
     ),
     ...mock,
