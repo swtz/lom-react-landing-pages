@@ -5,4 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 145. Componente GridText
+// 146. Correção das Headings (H1, H2, H3...)
