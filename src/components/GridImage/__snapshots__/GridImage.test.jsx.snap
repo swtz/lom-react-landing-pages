@@ -76,7 +76,7 @@ exports[`<GridText /> should render grid component 1`] = `
 
 @media (max-width:414px) {
   .c1 {
-    padding: .4rem;
+    padding: .8rem;
   }
 }
 
@@ -240,7 +240,7 @@ exports[`<GridText /> should render grid component without background 1`] = `
 
 @media (max-width:414px) {
   .c1 {
-    padding: .4rem;
+    padding: .8rem;
   }
 }
 

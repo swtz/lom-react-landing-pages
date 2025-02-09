@@ -25,7 +25,7 @@ describe('<SectionContainer />', () => {
 
       @media (max-width:414px) {
         .c0 {
-          padding: .4rem;
+          padding: .8rem;
         }
       }
 

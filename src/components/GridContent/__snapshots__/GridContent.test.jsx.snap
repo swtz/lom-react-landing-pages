@@ -55,7 +55,7 @@ exports[`<GridContent /> should render grid content 1`] = `
 
 @media (max-width:414px) {
   .c1 {
-    padding: .4rem;
+    padding: .8rem;
   }
 }
 
@@ -201,7 +201,7 @@ exports[`<GridContent /> should render grid content 2`] = `
 
 @media (max-width:414px) {
   .c1 {
-    padding: .4rem;
+    padding: .8rem;
   }
 }
 
