@@ -14,3 +14,8 @@
 // Sem que for testar um tipo de dado mutável como um array ou
 // um objeto, ao invés de se usar o método '.toBe()', deve-se
 // usar o método '.toEqual()'.
+
+// TDD (Test-Driven Development)
+// Começa pelo teste, ao desenvolver os casos de teste o dev
+// "erra primeiro" e isso o orienta e ir desenvolvendo, por exemplo,
+// a funcionalidade que se deseja criar.
