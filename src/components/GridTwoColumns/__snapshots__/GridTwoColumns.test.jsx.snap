@@ -76,7 +76,7 @@ exports[`<GridTwoColumns /> should render two columns grid 1`] = `
 
 @media (max-width:414px) {
   .c1 {
-    padding: .4rem;
+    padding: .8rem;
   }
 }
 

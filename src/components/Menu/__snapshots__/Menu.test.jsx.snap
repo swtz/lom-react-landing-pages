@@ -112,7 +112,7 @@ exports[`<Menu /> should not render links 1`] = `
 
 @media (max-width:414px) {
   .c4 {
-    padding: .4rem;
+    padding: .8rem;
   }
 }
 
@@ -348,7 +348,7 @@ exports[`<Menu /> should render Logo and Main Menu Nav 1`] = `
 
 @media (max-width:414px) {
   .c4 {
-    padding: .4rem;
+    padding: .8rem;
   }
 }
 

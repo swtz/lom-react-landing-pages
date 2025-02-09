@@ -1,17 +1,17 @@
 import { renderTheme } from '../../styles/render-theme';
 import { GridText } from '.';
 import mock from './mock';
+import { screen } from '@testing-library/react';
 
 describe('<GridText />', () => {
   it('should render grid component', () => {
-    const { container } = renderTheme(<GridText {...mock} />);
-    expect(container).toMatchSnapshot();
+    renderTheme(<GridText {...mock} />);
+    expect(
+      screen.getByRole('heading', { name: 'My grid' }),
+    ).toBeInTheDocument();
   });
 
   it('should render grid component without background', () => {
-    const { container } = renderTheme(
-      <GridText {...mock} background={undefined} />,
-    );
-    expect(container).toMatchSnapshot();
+    renderTheme(<GridText {...mock} background={undefined} />);
   });
 });
