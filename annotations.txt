@@ -9,3 +9,8 @@
 
 // Tentarei usar 'dados.json' que obtive do meu back-end Strapi.
 // Caso não dê certo, usarei o fornecido pelo coach-luiz.
+
+// Testing tip [in the 'file.test.js']:
+// Sem que for testar um tipo de dado mutável como um array ou
+// um objeto, ao invés de se usar o método '.toBe()', deve-se
+// usar o método '.toEqual()'.
