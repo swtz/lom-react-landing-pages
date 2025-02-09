@@ -5,4 +5,7 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 153. Testes: Base template
+// 155. Testes com TDD: iniciando o mapeamento de dados
+
+// Tentarei usar 'dados.json' que obtive do meu back-end Strapi.
+// Caso não dê certo, usarei o fornecido pelo coach-luiz.
