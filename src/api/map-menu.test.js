@@ -1,4 +1,4 @@
-import { mapMenu } from './map-menu';
+import { mapMenu, mapMenuLinks } from './map-menu';
 
 describe('map-menu', () => {
   it('should return a predefined object if no data', () => {
@@ -37,5 +37,24 @@ describe('map-menu', () => {
     expect(menu.links[0].newTab).toBe(false);
     expect(menu.links[0].children).toBe('intro');
     expect(menu.links[0].link).toBe('#intro');
+  });
+
+  it('should return an empty array if no links', () => {
+    const links = mapMenuLinks();
+    expect(links).toEqual([]);
+  });
+
+  it('should map links if links passed', () => {
+    const links = mapMenuLinks([
+      {
+        open_in_new_tab: false,
+        link_text: 'intro',
+        url: '#intro',
+      },
+      {},
+    ]);
+    expect(links[0].newTab).toBe(false);
+    expect(links[0].children).toBe('intro');
+    expect(links[0].link).toBe('#intro');
   });
 });
