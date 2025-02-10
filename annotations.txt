@@ -5,4 +5,14 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 156. Testes com TDD: mapeando os menus
+// 157. Mapeando SectionTwoColumn com testes
+
+// Nessa aula, não foi aplicada a metodologia do TDD.
+// Por quê? Ora, foi desenvolvida a lógica das funções
+// primeiro e depois está sendo feito os testes em cima
+// da lógica criada.
+
+// No TDD, a lógica das funcionalidades é feita com 
+// base nos testes JÁ REALIZADOS. Ou seja, testa-se primeiro
+// e depois a lógica é desenvolvida com base nesses testes
+// (como foi feita nas aulas anteriores).
