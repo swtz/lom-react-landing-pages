@@ -5,17 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 155. Testes com TDD: iniciando o mapeamento de dados
-
-// Tentarei usar 'dados.json' que obtive do meu back-end Strapi.
-// Caso não dê certo, usarei o fornecido pelo coach-luiz.
-
-// Testing tip [in the 'file.test.js']:
-// Sem que for testar um tipo de dado mutável como um array ou
-// um objeto, ao invés de se usar o método '.toBe()', deve-se
-// usar o método '.toEqual()'.
-
-// TDD (Test-Driven Development)
-// Começa pelo teste, ao desenvolver os casos de teste o dev
-// "erra primeiro" e isso o orienta e ir desenvolvendo, por exemplo,
-// a funcionalidade que se deseja criar.
+// 156. Testes com TDD: mapeando os menus
