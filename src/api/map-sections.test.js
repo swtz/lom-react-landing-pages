@@ -1,4 +1,8 @@
-import { mapSections, mapSectionTwoColumns } from './map-sections';
+import {
+  mapSectionContent,
+  mapSections,
+  mapSectionTwoColumns,
+} from './map-sections';
 
 describe('map-sections', () => {
   it('should render predefined section if no data', () => {
@@ -39,5 +43,40 @@ describe('map-sections', () => {
     expect(data.srcImg).toBe('a.svg');
     expect(data.text).toBe('Lorem ipsum dolor sit amet.');
     expect(data.title).toBe('this is the title of the section');
+  });
+
+  it('should map section content if no data', () => {
+    const data = mapSectionContent();
+    expect(data.background).toBe(false);
+    expect(data.component).toBe('');
+    expect(data.sectionId).toBe('');
+    expect(data.html).toBe('');
+    expect(data.title).toBe('');
+  });
+
+  it('should map section content', () => {
+    const data = mapSectionContent({
+      __component: 'section.section-content',
+      title: 'Olá, mundo!',
+      content: [
+        {
+          children: [
+            {
+              text: '<h1>Hello, world!</h1>',
+              type: 'text',
+            },
+          ],
+        },
+      ],
+      metadata: {
+        section_id: 'intro',
+        background: false,
+      },
+    });
+    expect(data.background).toBe(false);
+    expect(data.component).toBe('section.section-content');
+    expect(data.sectionId).toBe('intro');
+    expect(data.html).toBe('<h1>Hello, world!</h1>');
+    expect(data.title).toBe('Olá, mundo!');
   });
 });
