@@ -109,7 +109,7 @@ export const mapImageGrid = (section = {}) => {
           data: {
             attributes: { url: srcImg = '', alternativeText: altText = '' },
           },
-        } = '',
+        },
       } = img;
       return {
         srcImg,

@@ -36,13 +36,22 @@ describe('map-sections', () => {
     expect(withNoComponent).toEqual([{}]);
   });
 
-  it('should test section with filled image_grid array', () => {
-    const data = mapSections([
+  it('should test section.section-grid with no text_grid and image_grid', () => {
+    const withNoImageGrid = mapSections([
       {
         __component: 'section.section-grid',
         image_grid: [{ image: { data: { attributes: {} } } }],
       },
     ]);
+    expect(withNoImageGrid.length).toBe(1);
+
+    const withNoTextGrid = mapSections([
+      {
+        __component: 'section.section-grid',
+        text_grid: [{ title: undefined, description: undefined }],
+      },
+    ]);
+    expect(withNoTextGrid.length).toBe(1);
   });
 
   it('should return a predefined object if no data', () => {
