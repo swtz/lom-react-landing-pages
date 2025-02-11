@@ -45,30 +45,38 @@ describe('map-sections', () => {
     expect(data.title).toBe('this is the title of the section');
   });
 
+  it('should map section content if no data', () => {
+    const data = mapSectionContent();
+    expect(data.background).toBe(false);
+    expect(data.component).toBe('');
+    expect(data.sectionId).toBe('');
+    expect(data.html).toBe('');
+    expect(data.title).toBe('');
+  });
+
   it('should map section content', () => {
-    const section = mapSectionContent();
-    /*
-    {
-      "id": 1,
-      "__component": "section.section-content",
-      "title": "Olá, mundo!",
-      "content": [
+    const data = mapSectionContent({
+      __component: 'section.section-content',
+      title: 'Olá, mundo!',
+      content: [
         {
-          "type": "paragraph",
-          "children": [
+          children: [
             {
-              "text": "<h1>Hello, world!</h1>\n\n<p>Lorem ipsum dolor sit amet.</p><p>Est quia optio aut soluta quia sit enim illo ea consequatur quia id iure sunt hic quam unde hic tempore quis. Quo vitae magni et quibusdam delectus ut earum mollitia et reiciendis inventore id illum itaque et voluptatem quia qui dolore doloribus.",
-              "type": "text"
-            }
-          ]
-        }
+              text: '<h1>Hello, world!</h1>',
+              type: 'text',
+            },
+          ],
+        },
       ],
-      "metadata": {
-        "id": 3,
-        "name": "intro",
-        "section_id": "intro",
-        "background": false
-      }
-    }*/
+      metadata: {
+        section_id: 'intro',
+        background: false,
+      },
+    });
+    expect(data.background).toBe(false);
+    expect(data.component).toBe('section.section-content');
+    expect(data.sectionId).toBe('intro');
+    expect(data.html).toBe('<h1>Hello, world!</h1>');
+    expect(data.title).toBe('Olá, mundo!');
   });
 });
