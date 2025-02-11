@@ -79,7 +79,7 @@ export const mapTextGrid = (section = {}) => {
     title,
     description,
     grid: grid.map((text) => {
-      const { title, description } = text;
+      const { title = '', description = '' } = text;
       return {
         title,
         description,
@@ -103,10 +103,19 @@ export const mapImageGrid = (section = {}) => {
     component: 'section.section-grid-image',
     title,
     description,
-    grid: grid.map((img) => ({
-      srcImg: img.image.data.attributes.url,
-      altText: img.image.data.attributes.alternativeText,
-    })),
+    grid: grid.map((img) => {
+      const {
+        image: {
+          data: {
+            attributes: { url: srcImg = '', alternativeText: altText = '' },
+          },
+        } = '',
+      } = img;
+      return {
+        srcImg,
+        altText,
+      };
+    }),
     background,
     sectionId,
   };
