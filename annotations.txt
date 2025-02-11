@@ -6,3 +6,6 @@
 
 // Aula:
 // 163. Carregando os dados da API no front-end
+
+// Exemplo de acesso aos dados da Strapi API:
+// http://localhost:1337/api/pages/?filters[slug]=<slug-page-name>&populate=deep
