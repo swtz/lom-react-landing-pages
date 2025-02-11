@@ -2,6 +2,7 @@ import {
   mapSectionContent,
   mapSections,
   mapSectionTwoColumns,
+  mapTextGrid,
 } from './map-sections';
 
 describe('map-sections', () => {
@@ -78,5 +79,50 @@ describe('map-sections', () => {
     expect(data.sectionId).toBe('intro');
     expect(data.html).toBe('<h1>Hello, world!</h1>');
     expect(data.title).toBe('Olá, mundo!');
+  });
+
+  it('should map grid text if no data', () => {
+    const data = mapTextGrid();
+    expect(data.background).toBe(false);
+    expect(data.component).toBe('section.section-grid-text');
+    expect(data.sectionId).toBe('');
+    expect(data.grid).toEqual([]);
+    expect(data.title).toBe('');
+  });
+
+  it('should map grid text', () => {
+    const data = mapTextGrid({
+      __component: 'section.section-grid',
+      title: 'my grid',
+      description: 'A short description.',
+      metadata: {
+        section_id: 'grid-one',
+        background: true,
+      },
+      text_grid: [
+        {
+          title: 'Teste 1',
+          description: '<p>Rem dolorem minima ea voluptas dolores.</p>',
+        },
+        {
+          title: 'Teste 2',
+          description: '<p>Rem dolorem minima ea voluptas dolores.</p> ',
+        },
+        {
+          title: 'Teste 3',
+          description: '<p>Rem dolorem minima ea voluptas dolores.</p> ',
+        },
+      ],
+      image_grid: [],
+    });
+    expect(data.background).toBe(true);
+    expect(data.component).toBe('section.section-grid-text');
+    expect(data.sectionId).toBe('grid-one');
+    expect(data.grid[0].title).toBe('Teste 1');
+    expect(data.grid[0].description).toBe(
+      '<p>Rem dolorem minima ea voluptas dolores.</p>',
+    );
+    expect(data.title).toBe('my grid');
+    expect(data.description).toBe('A short description.');
   });
 });
