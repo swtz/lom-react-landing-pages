@@ -5,4 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 158. Mapeando SectionContent com testes
+// 160. Mapeando GridImage com testes
