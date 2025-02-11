@@ -5,11 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 159. Mapeando GridText com testes
-
-// A função 'mapSectionGrid' mapeará os dados oriundos do
-// back-end Strapi. Entretanto, essa section permite a adição de
-// imagens.
-
-// Nessa aula serão mapeados os dados da section possuindo 
-// apenas um grid layout contendo 'Rich Text'.
+// 160. Mapeando GridImage com testes

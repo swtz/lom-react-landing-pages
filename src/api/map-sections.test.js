@@ -1,4 +1,5 @@
 import {
+  mapImageGrid,
   mapSectionContent,
   mapSections,
   mapSectionTwoColumns,
@@ -113,7 +114,6 @@ describe('map-sections', () => {
           description: '<p>Rem dolorem minima ea voluptas dolores.</p> ',
         },
       ],
-      image_grid: [],
     });
     expect(data.background).toBe(true);
     expect(data.component).toBe('section.section-grid-text');
@@ -124,5 +124,45 @@ describe('map-sections', () => {
     );
     expect(data.title).toBe('my grid');
     expect(data.description).toBe('A short description.');
+  });
+
+  it('should map grid image if no data', () => {
+    const data = mapImageGrid();
+    expect(data.background).toBe(false);
+    expect(data.component).toBe('section.section-grid-image');
+    expect(data.sectionId).toBe('');
+    expect(data.grid).toEqual([]);
+    expect(data.title).toBe('');
+  });
+
+  it('should map grid image with data', () => {
+    const data = mapImageGrid({
+      __component: 'section.section-grid',
+      title: 'Gallery',
+      description: 'A short description too.',
+      metadata: {
+        section_id: 'gallery',
+        background: false,
+      },
+      image_grid: [
+        {
+          image: {
+            data: {
+              attributes: {
+                alternativeText: 'space.jpg',
+                url: 'a.svg',
+              },
+            },
+          },
+        },
+      ],
+    });
+    expect(data.component).toBe('section.section-grid-image');
+    expect(data.title).toBe('Gallery');
+    expect(data.description).toBe('A short description too.');
+    expect(data.grid[0].srcImg).toBe('a.svg');
+    expect(data.grid[0].altText).toBe('space.jpg');
+    expect(data.background).toBe(false);
+    expect(data.sectionId).toBe('gallery');
   });
 });
