@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Base } from '../Base';
 import { mockBase } from '../Base/mock';
 import { mapData } from '../../api/map-data';
 
 export const Home = () => {
   const [data, setData] = useState([]);
+  const isMounted = useRef(true);
 
   useEffect(() => {
     const load = async () => {
@@ -14,7 +15,13 @@ export const Home = () => {
       setData(pageData[0]);
     };
 
-    load();
+    if (isMounted.current) {
+      load();
+    }
+
+    return () => {
+      isMounted.current = false;
+    };
   }, []);
 
   if (data === undefined) {
