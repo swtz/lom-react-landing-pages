@@ -17,13 +17,7 @@ export const Home = () => {
         );
         const json = await data.json();
         const pageData = mapData(json);
-
-        await new Promise((r) => {
-          return setTimeout(() => {
-            setData(pageData[0]);
-            r();
-          }, 100000);
-        });
+        setData(pageData[0]);
       } catch (e) {
         setData(undefined);
       }
