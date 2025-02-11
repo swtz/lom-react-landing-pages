@@ -5,4 +5,8 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 161. Testes finais no mapeamento de dados
+// 162. Limpando testes
+
+// A única pasta que não foi testada até aqui é onde
+// ficam os 'templates' que são os componentes que agrupam
+// todos os outros componentes criados.

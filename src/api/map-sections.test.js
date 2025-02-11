@@ -17,7 +17,7 @@ describe('map-sections', () => {
   it('should render sections with correct data', () => {
     const fakeData = pagesFakeData.data[0].attributes.sections;
     const data = mapSections(fakeData);
-    expect([data[0].component]).toEqual(['section.section-two-columns']);
+    expect(data[0].component).toEqual('section.section-two-columns');
   });
 
   it('should test section with invalid data', () => {
@@ -149,10 +149,6 @@ describe('map-sections', () => {
         },
         {
           title: 'Teste 2',
-          description: '<p>Rem dolorem minima ea voluptas dolores.</p> ',
-        },
-        {
-          title: 'Teste 3',
           description: '<p>Rem dolorem minima ea voluptas dolores.</p> ',
         },
       ],
