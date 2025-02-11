@@ -78,7 +78,13 @@ export const mapTextGrid = (section = {}) => {
     component: 'section.section-grid-text',
     title,
     description,
-    grid,
+    grid: grid.map((text) => {
+      const { title, description } = text;
+      return {
+        title,
+        description,
+      };
+    }),
     background,
     sectionId,
   };
