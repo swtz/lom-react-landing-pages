@@ -1,6 +1,11 @@
 import { mapData } from './map-data';
 
 describe('map-data', () => {
+  it('should map data with invalid value', () => {
+    const pagesData = mapData(undefined);
+    expect(pagesData).toEqual([]);
+  });
+
   it('should map data even if where is no data', () => {
     const pagesData = mapData({ data: [{ attributes: {} }] })[0];
     expect(pagesData.footerHtml).toEqual([]);

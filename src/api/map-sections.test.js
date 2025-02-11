@@ -6,10 +6,52 @@ import {
   mapTextGrid,
 } from './map-sections';
 
+import pagesFakeData from './dados.json';
+
 describe('map-sections', () => {
   it('should render predefined section if no data', () => {
     const data = mapSections();
     expect(data).toEqual([]);
+  });
+
+  it('should render sections with correct data', () => {
+    const fakeData = pagesFakeData.data[0].attributes.sections;
+    const data = mapSections(fakeData);
+    expect([data[0].component]).toEqual(['section.section-two-columns']);
+  });
+
+  it('should test section with invalid data', () => {
+    const withNoTextOrImageGrid = mapSections([
+      {
+        __component: 'section.section-grid',
+      },
+    ]);
+    expect(withNoTextOrImageGrid).toEqual([
+      {
+        __component: 'section.section-grid',
+      },
+    ]);
+
+    const withNoComponent = mapSections([{}]);
+    expect(withNoComponent).toEqual([{}]);
+  });
+
+  it('should test section.section-grid with no text_grid and image_grid', () => {
+    const withNoImageGrid = mapSections([
+      {
+        __component: 'section.section-grid',
+        image_grid: [{ image: { data: { attributes: {} } } }],
+      },
+    ]);
+    expect(withNoImageGrid.length).toBe(1);
+
+    const withNoTextGrid = mapSections([
+      {
+        __component: 'section.section-grid',
+        text_grid: [{ title: undefined, description: undefined }],
+      },
+    ]);
+    expect(withNoTextGrid.length).toBe(1);
   });
 
   it('should return a predefined object if no data', () => {

@@ -5,4 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 160. Mapeando GridImage com testes
+// 161. Testes finais no mapeamento de dados
