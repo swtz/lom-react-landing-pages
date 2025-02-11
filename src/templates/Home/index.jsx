@@ -3,6 +3,7 @@ import { Base } from '../Base';
 import { mockBase } from '../Base/mock';
 import { mapData } from '../../api/map-data';
 import { PageNotFound } from '../PageNotFound';
+import { Loading } from '../Loading';
 
 export const Home = () => {
   const [data, setData] = useState([]);
@@ -12,7 +13,7 @@ export const Home = () => {
     const load = async () => {
       try {
         const data = await fetch(
-          'http://localhost:404/api/pages?populate=deep',
+          'http://localhost:1337/api/pages?populate=deep',
         );
         const json = await data.json();
         const pageData = mapData(json);
@@ -36,7 +37,7 @@ export const Home = () => {
   }
 
   if (data && !data.slug) {
-    return <h1>Carregando...</h1>;
+    return <Loading />;
   }
 
   return <Base {...mockBase} />;
