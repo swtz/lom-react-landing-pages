@@ -4,6 +4,9 @@ import { Base } from '../Base';
 import { PageNotFound } from '../PageNotFound';
 import { Loading } from '../Loading';
 import { GridTwoColumns } from '../../components/GridTwoColumns';
+import { GridContent } from '../../components/GridContent';
+import { GridText } from '../../components/GridText';
+import { GridImage } from '../../components/GridImage';
 
 export const Home = () => {
   const [data, setData] = useState([]);
@@ -18,7 +21,9 @@ export const Home = () => {
         const json = await data.json();
         const pageData = mapData(json);
         setData(pageData[0]);
+        console.log(pageData[0]);
       } catch (e) {
+        console.log(e);
         setData(undefined);
       }
     };
@@ -40,7 +45,7 @@ export const Home = () => {
     return <Loading />;
   }
 
-  const { menu, sections, footerHtml } = data;
+  const { menu, sections, footerHtml, slug } = data;
   const { links, text, link, srcImg } = menu;
 
   return (
@@ -51,9 +56,22 @@ export const Home = () => {
     >
       {sections.map((section, index) => {
         const { component } = section;
+        const key = `${slug}-${index}`;
 
         if (component === 'section.section-two-columns') {
-          return <GridTwoColumns key={`${index}`} {...section} />;
+          return <GridTwoColumns key={key} {...section} />;
+        }
+
+        if (component === 'section.section-content') {
+          return <GridContent key={key} {...section} />;
+        }
+
+        if (component === 'section.section-grid-text') {
+          return <GridText key={key} {...section} />;
+        }
+
+        if (component === 'section.section-grid-image') {
+          return <GridImage key={key} {...section} />;
         }
       })}
     </Base>
