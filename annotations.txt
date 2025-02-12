@@ -5,4 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 173. Adicionando títulos dinâmicos nas páginas
+// 174. Preenchendo dados e explicações finais
