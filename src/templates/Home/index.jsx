@@ -18,6 +18,7 @@ export const Home = () => {
         const json = await data.json();
         const pageData = mapData(json);
         setData(pageData[0]);
+        console.log(pageData[0]);
       } catch (e) {
         setData(undefined);
       }
@@ -40,5 +41,16 @@ export const Home = () => {
     return <Loading />;
   }
 
-  return <Base {...mockBase} />;
+  const { menu, sections, footerHtml } = data;
+  const { links, text, link, srcImg } = menu;
+
+  return (
+    <Base
+      links={links}
+      footerHtml={footerHtml}
+      logoData={{ text, link, srcImg }}
+    >
+      <h1>Hello, world!</h1>
+    </Base>
+  );
 };

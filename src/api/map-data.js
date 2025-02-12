@@ -12,7 +12,14 @@ export const mapData = (pagesData = { data: [] }) => {
     } = data.attributes;
 
     return {
-      footerHtml,
+      footerHtml: String(
+        footerHtml.map((item) => {
+          const {
+            children: [{ text = '' }],
+          } = item;
+          return text;
+        }),
+      ),
       slug,
       title,
       sections: mapSections(sections),
