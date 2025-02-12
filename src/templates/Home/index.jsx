@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
-import { Base } from '../Base';
-import { mockBase } from '../Base/mock';
 import { mapData } from '../../api/map-data';
+import { Base } from '../Base';
 import { PageNotFound } from '../PageNotFound';
 import { Loading } from '../Loading';
+import { GridTwoColumns } from '../../components/GridTwoColumns';
 
 export const Home = () => {
   const [data, setData] = useState([]);
@@ -18,7 +18,6 @@ export const Home = () => {
         const json = await data.json();
         const pageData = mapData(json);
         setData(pageData[0]);
-        console.log(pageData[0]);
       } catch (e) {
         setData(undefined);
       }
@@ -50,7 +49,13 @@ export const Home = () => {
       footerHtml={footerHtml}
       logoData={{ text, link, srcImg }}
     >
-      <h1>Hello, world!</h1>
+      {sections.map((section, index) => {
+        const { component } = section;
+
+        if (component === 'section.section-two-columns') {
+          return <GridTwoColumns key={`${index}`} {...section} />;
+        }
+      })}
     </Base>
   );
 };
