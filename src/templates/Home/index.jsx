@@ -21,9 +21,8 @@ export const Home = () => {
         const json = await data.json();
         const pageData = mapData(json);
         setData(pageData[0]);
-        console.log(pageData[0]);
       } catch (e) {
-        console.log(e);
+        console.log('Fetch Strapi API: ', e);
         setData(undefined);
       }
     };
