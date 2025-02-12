@@ -17,8 +17,8 @@ export const Container = styled.div`
     }
 
     & ${SectionContainer} {
-      padding-top: 0;
-      padding-bottom: 0;
+      padding-top: ${theme.font.sizes.small};
+      padding-bottom: ${theme.font.sizes.small};
     }
   `}
 `;
