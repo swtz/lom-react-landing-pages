@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { Title as HeadingContainer } from '../Heading/styles';
 import { Container as TextComponent } from '../TextComponent/styles';
 
 export const Container = styled.div`

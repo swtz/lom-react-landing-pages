@@ -6,3 +6,17 @@
 
 // Aula:
 // 169. Corrigindo os estilos
+
+// CSS tip:
+// Caso um elemento do tipo 'table' estoure o container:
+`
+.table {
+  width: 100%;
+  overflow-y: auto;
+}
+`
+// Assim, a tabela ocupará 100% do tamanho disponível
+// (o elemento pai que disponibiliza esse tamanho)
+// e, se ultrapassar, o usuário conseguirá 'rolar'
+// a tabela para o lado, a fim de ver o conteúdo
+// escondido.
