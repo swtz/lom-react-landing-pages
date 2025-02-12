@@ -8,7 +8,7 @@ export const mapData = (pagesData = { data: [] }) => {
       slug = '',
       title = '',
       sections = [],
-      menu = {},
+      menu = { logo: { data: null } },
     } = data.attributes;
 
     return {

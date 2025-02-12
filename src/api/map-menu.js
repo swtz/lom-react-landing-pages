@@ -1,4 +1,4 @@
-export const mapMenu = (menu = {}) => {
+export const mapMenu = (menu = { logo: { data: null } }) => {
   const {
     logo_text: text = '',
     logo_link: link = '',

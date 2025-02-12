@@ -5,4 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 171. Adicionando links com React Router Dom
+// 173. Adicionando títulos dinâmicos nas páginas

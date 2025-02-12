@@ -19,6 +19,7 @@ describe('<Footer />', () => {
         max-width: 120rem;
         margin: 0 auto;
         padding: 3.2rem;
+        width: 100%;
       }
 
       .c0 {
@@ -37,8 +38,8 @@ describe('<Footer />', () => {
       }
 
       .c0 .c1 {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
       }
 
       @media (max-width:768px) {

@@ -40,7 +40,7 @@ describe('map-sections', () => {
     const withNoImageGrid = mapSections([
       {
         __component: 'section.section-grid',
-        image_grid: [{ image: { data: { attributes: {} } } }],
+        image_grid: [{ image: { data: [{ attributes: {} }] } }],
       },
     ]);
     expect(withNoImageGrid.length).toBe(1);
@@ -185,12 +185,14 @@ describe('map-sections', () => {
       image_grid: [
         {
           image: {
-            data: {
-              attributes: {
-                alternativeText: 'space.jpg',
-                url: 'a.svg',
+            data: [
+              {
+                attributes: {
+                  alternativeText: 'space.jpg',
+                  url: 'a.svg',
+                },
               },
-            },
+            ],
           },
         },
       ],

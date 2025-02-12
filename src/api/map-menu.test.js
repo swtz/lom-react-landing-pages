@@ -2,7 +2,7 @@ import { mapMenu, mapMenuLinks } from './map-menu';
 
 describe('map-menu', () => {
   it('should return a predefined object if no data', () => {
-    const menu = mapMenu();
+    const menu = mapMenu(undefined);
     expect(menu.text).toBe('');
     expect(menu.srcImg).toBe('');
     expect(menu.link).toBe('');
