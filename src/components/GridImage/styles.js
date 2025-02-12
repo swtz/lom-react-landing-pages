@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { Title as HeadingContainer } from '../Heading/styles';
 import { Container as TextComponent } from '../TextComponent/styles';
 
 export const Container = styled.div`
@@ -27,6 +26,8 @@ export const GridElement = styled.div`
 export const Image = styled.img`
   ${({ theme }) => css`
     width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
 
     @media ${theme.media.gteLarge} {
       transition: all 300ms ease-in-out;
