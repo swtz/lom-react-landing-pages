@@ -5,4 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 167. Adicionando componentes na página
+// 168. Corrigindo a logo

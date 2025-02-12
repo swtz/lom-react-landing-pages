@@ -108,14 +108,14 @@ export const mapImageGrid = (section = {}) => {
         image: {
           data: [
             {
-              attributes: { url: srcImg = '', alternativeText: altText = '' },
+              attributes: { url: srcImg = '', alternativeText },
             },
           ],
         },
       } = img;
       return {
         srcImg,
-        altText,
+        altText: alternativeText ? alternativeText : '',
       };
     }),
     background,

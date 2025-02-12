@@ -2,13 +2,13 @@ export const mapMenu = (menu = {}) => {
   const {
     logo_text: text = '',
     logo_link: link = '',
-    logo: {
-      data: {
-        attributes: { url: srcImg = '' },
-      },
-    } = { data: { attributes: {} } },
     menu_links: links = [],
   } = menu;
+
+  const srcImg =
+    menu.logo.data && menu.logo.data.attributes.url
+      ? menu.logo.data.attributes.url
+      : '';
 
   return {
     text,
