@@ -27,6 +27,8 @@ export const GridElement = styled.div`
 export const Image = styled.img`
   ${({ theme }) => css`
     width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
 
     @media ${theme.media.gteLarge} {
       transition: all 300ms ease-in-out;

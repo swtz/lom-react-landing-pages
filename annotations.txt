@@ -5,5 +5,4 @@
 // Seção 8: Projeto 1: Landing pages com React (Front-end)
 
 // Aula:
-// 168. Corrigindo a logo
-// ...
+// 169. Corrigindo os estilos
