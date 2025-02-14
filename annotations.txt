@@ -2,7 +2,36 @@
 // Storybook, Strapi, HTML e CSS com TypeScript e JavaScript
 // by Luiz Otávio Miranda.
 
-// Seção 8: Projeto 1: Landing pages com React (Front-end)
+// Seção 10: Next.Js com SSR, SSG e ISR (ou ISG)
 
 // Aula:
-// 174. Preenchendo dados e explicações finais
+// 178. Introdução ao Next.js - O que o Next resolve?
+
+// -> O Next.js possibilita a renderização de componentes
+// no lado do servidor, ou seja, o lado do cliente fica
+// isento de ter de gerar o html/css com o JavaScript.
+
+// Nesse curso, será usado o Next.js para "jogar" o
+// "html real" na página do cliente.
+
+// create-react-app -> SPA (Single Page Application)
+// create-next-app -> SSG (Static Site Generation),
+// ISG (Incremental Static Generation) /
+// ISR (Incremental Static Regeneration),
+// SSR (Server-side Rendering)
+
+// SSG -> como o nome diz, é uma página estática; ela não
+// muda, ou seja, é precisa re-buildar a página para gerar
+// um novo arquivo de build.
+
+// SSR => página totalmente dinâmica, pois, quando o cliente
+// acessa o recurso, a página é re-renderizada, ou seja,
+// seu conteúdo é inteiramente atualizado.
+
+// ISG/ISR -> é o melhor dos dois mundos, ou seja, o Next.js
+// builda uma página estática, porém, é possível definir
+// um parâmetro para que ela seja re-buildada, ou seja,
+// é possível controlar o número de renderizações do
+// lado do servidor com essa opção.
+
+// SPA e CSR (Client-side Rendering) são a mesma coisa.
