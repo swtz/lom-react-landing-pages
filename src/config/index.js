@@ -1,5 +1,5 @@
 export default {
-  url: 'http://localhost:1337/api/pages/?filters[slug]=',
+  url: 'https://strapi-on-azure-crf2dwb3dnhbbhe3.centralus-01.azurewebsites.net/api/pages/?filters[slug]=',
   siteName: 'LeonarTHINKer',
   defaultSlug: 'look-my-page',
 };
