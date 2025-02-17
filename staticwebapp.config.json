@@ -1,12 +1,12 @@
 {
   "routes": [
     {
-      "route": "/",
+      "route": "/*",
       "methods": [
         "get"
       ],
       "rewrite": "/index.html",
-      "redirect": "/*",
+      "redirect": "",
       "statusCode": 202
     }
   ]
