@@ -5,8 +5,8 @@
       "methods": [
         "get"
       ],
-      "rewrite": "/*",
-      "redirect": "/index.html",
+      "rewrite": "/index.html",
+      "redirect": "/*",
       "statusCode": 202
     }
   ]
