@@ -8,6 +8,14 @@
       "rewrite": "/index.html",
       "redirect": "",
       "statusCode": 202
+    },
+    {
+      "route": "/*",
+      "methods": [
+        "get"
+      ],
+      "rewrite": "/index.html",
+      "statusCode": 202
     }
   ]
 }
